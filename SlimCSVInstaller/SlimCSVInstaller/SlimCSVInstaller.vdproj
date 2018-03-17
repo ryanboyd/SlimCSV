@@ -49,6 +49,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -212,15 +220,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SlimCSV"
-        "ProductCode" = "8:{0934E82A-2F0D-47BA-B8A9-E62F34D9E566}"
-        "PackageCode" = "8:{D5B5E347-ECC8-40DC-819E-599A3F991E2D}"
+        "ProductCode" = "8:{D9E52337-1843-4B57-AEBB-937C0CAC5B2F}"
+        "PackageCode" = "8:{9D91F0BC-7BF8-4134-9D42-A0995001312B}"
         "UpgradeCode" = "8:{B2A6737C-0186-407A-A4FD-F4EF3664BAF2}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.00"
+        "ProductVersion" = "8:1.02"
         "Manufacturer" = "8:Ryan L. Boyd, Ph.D."
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"

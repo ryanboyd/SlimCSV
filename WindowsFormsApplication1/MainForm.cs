@@ -507,8 +507,8 @@ namespace SlimCSV
 
 
 
-                    using (var fileStream = new FileStream(OutputFile, FileMode.Create))
-                    using (var streamWriter = new StreamWriter(fileStream, SelectedEncoding))
+                    using (FileStream fileStream = new FileStream(OutputFile, FileMode.Create, FileAccess.Write, FileShare.Read))
+                    using (StreamWriter streamWriter = new StreamWriter(fileStream, SelectedEncoding))
                     {
 
 
@@ -519,15 +519,16 @@ namespace SlimCSV
                             //parse out the row
                             string[] fields = parser.ReadFields();
 
-                                LineNumber++;
+                            LineNumber++;
 
-                                //report what row we're working on
-                                if (LineNumber % 10 == 0) { 
+                            //report what row we're working on
+                            if (LineNumber % 10 == 0)
+                            {
                                 FilenameLabel.Invoke((MethodInvoker)delegate
                                     {
                                         FilenameLabel.Text = "Currently writing row #" + LineNumber.ToString();
                                     });
-                                }
+                            }
 
 
 
@@ -537,7 +538,8 @@ namespace SlimCSV
                             string[] output_array = new string[BgData.NumberOfColumns];
 
                             for (int i = 0; i < BgData.NumberOfColumns; i++)
-                                if (UsingQuotes) { 
+                                if (UsingQuotes)
+                                {
                                     output_array[i] = '"' + fields[BgData.KeepCols[i]].Replace("\"", "\"\"") + '"';
                                 }
                                 else
@@ -549,10 +551,10 @@ namespace SlimCSV
                             streamWriter.WriteLine(string.Join(Delimiters[0], output_array));
 
 
-                        //write our output
+                            //write our output
 
 
-                        if (e.Cancel)
+                            if (e.Cancel)
                             {
                                 break;
                             }
@@ -565,6 +567,8 @@ namespace SlimCSV
 
                 }
 
+                e.Result = null;
+
             }
             catch
             {
@@ -574,7 +578,7 @@ namespace SlimCSV
 
 
 
-            e.Result = null;
+            
 
 
         }
@@ -582,7 +586,7 @@ namespace SlimCSV
 
         private void BgWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            StartButton.Text = "Write Text Files";
+            StartButton.Text = "Start!";
             EnableButtons();
             if (e.Result == null)
             {

@@ -328,7 +328,7 @@
             this.MinimumSize = new System.Drawing.Size(1015, 590);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SlimCSV";
+            this.Text = "SlimCSV (v1.02)";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
