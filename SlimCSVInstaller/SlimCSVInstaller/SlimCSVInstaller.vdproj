@@ -56,6 +56,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
         "Release"
@@ -105,9 +113,9 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:.NETFramework,Version=v4.5"
+                "FrameworkVersion" = "8:.NETFramework,Version=v4.6.2"
                 "AllowLaterVersions" = "11:FALSE"
-                "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=395269"
+                "InstallUrl" = "8:https://www.microsoft.com/en-us/download/details.aspx?id=53344"
                 }
             }
         }
@@ -220,15 +228,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SlimCSV"
-        "ProductCode" = "8:{D9E52337-1843-4B57-AEBB-937C0CAC5B2F}"
-        "PackageCode" = "8:{9D91F0BC-7BF8-4134-9D42-A0995001312B}"
+        "ProductCode" = "8:{EB8F0C1C-CAF2-4F07-B38F-20281E3724B9}"
+        "PackageCode" = "8:{5F74C3E2-0CB6-49D4-9E04-63AD76933913}"
         "UpgradeCode" = "8:{B2A6737C-0186-407A-A4FD-F4EF3664BAF2}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.02"
+        "ProductVersion" = "8:1.03"
         "Manufacturer" = "8:Ryan L. Boyd, Ph.D."
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"

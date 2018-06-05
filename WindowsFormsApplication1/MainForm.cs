@@ -67,6 +67,7 @@ namespace SlimCSV
         {
 
 
+
             if (BgWorker.IsBusy)
             {
                 BgWorker.CancelAsync();
@@ -468,15 +469,19 @@ namespace SlimCSV
             string[] Delimiters = BgData.Delimiters.ToCharArray().Select(c => c.ToString()).ToArray(); ;
             bool UsingQuotes = Convert.ToBoolean(BgData.UsingQuotes);
 
+            bool DumpOutputAsTXT = false;
             
 
-            string OutputFile = Path.GetDirectoryName(InputFile) + Path.DirectorySeparatorChar + "_SLIM_" + Path.GetFileName(InputFile); 
+
 
             this.Invoke((MethodInvoker)delegate ()
             {
                 SelectedEncoding = Encoding.GetEncoding(EncodingDropdown.SelectedItem.ToString());
+                DumpOutputAsTXT = DumpAsTextCheckbox.Checked;
             });
 
+            string OutputFile = Path.GetDirectoryName(InputFile) + Path.DirectorySeparatorChar + "_SLIM_" + Path.GetFileName(InputFile);
+            if (DumpOutputAsTXT) OutputFile += ".txt";
 
             try { 
 
@@ -538,7 +543,10 @@ namespace SlimCSV
                             string[] output_array = new string[BgData.NumberOfColumns];
 
                             for (int i = 0; i < BgData.NumberOfColumns; i++)
-                                if (UsingQuotes)
+
+                            { 
+
+                                if (UsingQuotes && DumpOutputAsTXT == false)
                                 {
                                     output_array[i] = '"' + fields[BgData.KeepCols[i]].Replace("\"", "\"\"") + '"';
                                 }
@@ -547,8 +555,17 @@ namespace SlimCSV
                                     output_array[i] = fields[BgData.KeepCols[i]];
                                 }
 
+                            }
 
-                            streamWriter.WriteLine(string.Join(Delimiters[0], output_array));
+                            if (DumpOutputAsTXT)
+                            {
+                                streamWriter.WriteLine(string.Join("\r\n", output_array));
+                            }
+                            else
+                            {
+                                streamWriter.WriteLine(string.Join(Delimiters[0], output_array));
+                            }
+                            
 
 
                             //write our output
@@ -711,7 +728,9 @@ namespace SlimCSV
             HeaderRowDropdown.Enabled = false;
             EncodingDropdown.Enabled = false;
 
-            
+            DumpAsTextCheckbox.Enabled = false;
+
+
         }
 
         public void EnableButtons()
@@ -724,7 +743,7 @@ namespace SlimCSV
             HeaderRowDropdown.Enabled = true;
             EncodingDropdown.Enabled = true;
 
-            
+            DumpAsTextCheckbox.Enabled = true;
 
         }
 
