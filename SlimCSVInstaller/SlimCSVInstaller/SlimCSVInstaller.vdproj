@@ -15,20 +15,20 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_066879DC1EAE4BF081D929131F2C71A9"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_149374AA88B9439F8265472E65925B29"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_B75F912D7CB240FAB8A228CD2DB0D6F3"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_B75F912D7CB240FAB8A228CD2DB0D6F3"
+        "OwnerKey" = "8:_066879DC1EAE4BF081D929131F2C71A9"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -121,34 +121,14 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_149374AA88B9439F8265472E65925B29"
-            {
-            "SourcePath" = "8:..\\..\\slim.ico"
-            "TargetName" = "8:slim.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_49F6E79A50EB499A9620DA65A8CDA243"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:TRUE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B75F912D7CB240FAB8A228CD2DB0D6F3"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_066879DC1EAE4BF081D929131F2C71A9"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:SlimCSV, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_B75F912D7CB240FAB8A228CD2DB0D6F3"
+                    "_066879DC1EAE4BF081D929131F2C71A9"
                     {
                     "Name" = "8:SlimCSV.exe"
                     "Attributes" = "3:512"
@@ -163,6 +143,26 @@
             "Vital" = "11:TRUE"
             "ReadOnly" = "11:FALSE"
             "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_149374AA88B9439F8265472E65925B29"
+            {
+            "SourcePath" = "8:..\\..\\slim.ico"
+            "TargetName" = "8:slim.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_49F6E79A50EB499A9620DA65A8CDA243"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:TRUE"
             "System" = "11:FALSE"
             "Permanent" = "11:FALSE"
             "SharedLegacy" = "11:FALSE"
@@ -228,15 +228,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SlimCSV"
-        "ProductCode" = "8:{EB8F0C1C-CAF2-4F07-B38F-20281E3724B9}"
-        "PackageCode" = "8:{5F74C3E2-0CB6-49D4-9E04-63AD76933913}"
+        "ProductCode" = "8:{2BB31CE5-89E4-47B1-BE47-B232D81599FC}"
+        "PackageCode" = "8:{F3505E97-C3F6-4A16-AA17-2CB5865C207B}"
         "UpgradeCode" = "8:{B2A6737C-0186-407A-A4FD-F4EF3664BAF2}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.03"
+        "ProductVersion" = "8:1.04"
         "Manufacturer" = "8:Ryan L. Boyd, Ph.D."
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -349,7 +349,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_06C8855847B84BA288CD553655EC5C56"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_D111FA0FC33846FAA645F2C1FBB5A9A3"
             {
             "Name" = "8:SlimCSV"
             "Arguments" = "8:"
@@ -357,13 +357,13 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_B75F912D7CB240FAB8A228CD2DB0D6F3"
+            "Target" = "8:_066879DC1EAE4BF081D929131F2C71A9"
             "Folder" = "8:_432AAAC5DF0444FEAEE27FF531ACF54B"
             "WorkingFolder" = "8:_49F6E79A50EB499A9620DA65A8CDA243"
             "Icon" = "8:_149374AA88B9439F8265472E65925B29"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_82EA23A222004CF794A6CD025E5C0121"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_D2993413D66A4E7DA0290F643CAFA8DA"
             {
             "Name" = "8:SlimCSV"
             "Arguments" = "8:"
@@ -371,7 +371,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_B75F912D7CB240FAB8A228CD2DB0D6F3"
+            "Target" = "8:_066879DC1EAE4BF081D929131F2C71A9"
             "Folder" = "8:_A17037EE48C145AE908D7AD3442C2D02"
             "WorkingFolder" = "8:_49F6E79A50EB499A9620DA65A8CDA243"
             "Icon" = "8:_149374AA88B9439F8265472E65925B29"

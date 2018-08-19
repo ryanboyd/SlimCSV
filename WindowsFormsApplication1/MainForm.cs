@@ -404,6 +404,7 @@ namespace SlimCSV
             //bind the results to the datagridview
             try { 
                 dataGridView1.DataSource = e.Result;
+                foreach (var column in dataGridView1.Columns) ((DataGridViewTextBoxColumn)column).MaxInputLength = 2147483647;
                 EnableButtons();
                 ReloadCSVButton.Enabled = true;
                 StartButton.Enabled = true;

@@ -38,6 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.LoadCSVPreview_BGWorker = new System.ComponentModel.BackgroundWorker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.DumpAsTextCheckbox = new System.Windows.Forms.CheckBox();
             this.HeaderRowDropdown = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.ReloadCSVButton = new System.Windows.Forms.Button();
@@ -51,7 +52,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.ColumnNameCheckedListbox = new System.Windows.Forms.CheckedListBox();
             this.FilenameDisplayBox = new System.Windows.Forms.TextBox();
-            this.DumpAsTextCheckbox = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -68,7 +68,7 @@
             this.StartButton.Enabled = false;
             this.StartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartButton.Location = new System.Drawing.Point(102, 278);
-            this.StartButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StartButton.Margin = new System.Windows.Forms.Padding(4);
             this.StartButton.Name = "StartButton";
             this.StartButton.Size = new System.Drawing.Size(203, 42);
             this.StartButton.TabIndex = 3;
@@ -111,7 +111,7 @@
             this.EncodingDropdown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EncodingDropdown.FormattingEnabled = true;
             this.EncodingDropdown.Location = new System.Drawing.Point(165, 148);
-            this.EncodingDropdown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EncodingDropdown.Margin = new System.Windows.Forms.Padding(4);
             this.EncodingDropdown.Name = "EncodingDropdown";
             this.EncodingDropdown.Size = new System.Drawing.Size(227, 28);
             this.EncodingDropdown.TabIndex = 9;
@@ -146,13 +146,24 @@
             this.groupBox1.Controls.Add(this.DelimiterTextBox);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(897, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(416, 294);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Options for Reading Data File";
+            // 
+            // DumpAsTextCheckbox
+            // 
+            this.DumpAsTextCheckbox.AutoSize = true;
+            this.DumpAsTextCheckbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DumpAsTextCheckbox.Location = new System.Drawing.Point(19, 191);
+            this.DumpAsTextCheckbox.Name = "DumpAsTextCheckbox";
+            this.DumpAsTextCheckbox.Size = new System.Drawing.Size(224, 24);
+            this.DumpAsTextCheckbox.TabIndex = 21;
+            this.DumpAsTextCheckbox.Text = "Dump Output as Flat Text";
+            this.DumpAsTextCheckbox.UseVisualStyleBackColor = true;
             // 
             // HeaderRowDropdown
             // 
@@ -166,7 +177,7 @@
             "True",
             "False"});
             this.HeaderRowDropdown.Location = new System.Drawing.Point(277, 111);
-            this.HeaderRowDropdown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HeaderRowDropdown.Margin = new System.Windows.Forms.Padding(4);
             this.HeaderRowDropdown.MaxDropDownItems = 2;
             this.HeaderRowDropdown.Name = "HeaderRowDropdown";
             this.HeaderRowDropdown.Size = new System.Drawing.Size(115, 28);
@@ -188,7 +199,7 @@
             this.ReloadCSVButton.Enabled = false;
             this.ReloadCSVButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReloadCSVButton.Location = new System.Drawing.Point(92, 234);
-            this.ReloadCSVButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ReloadCSVButton.Margin = new System.Windows.Forms.Padding(4);
             this.ReloadCSVButton.Name = "ReloadCSVButton";
             this.ReloadCSVButton.Size = new System.Drawing.Size(233, 42);
             this.ReloadCSVButton.TabIndex = 16;
@@ -208,7 +219,7 @@
             "True",
             "False"});
             this.EnclosedInQuotesDropdown.Location = new System.Drawing.Point(277, 73);
-            this.EnclosedInQuotesDropdown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EnclosedInQuotesDropdown.Margin = new System.Windows.Forms.Padding(4);
             this.EnclosedInQuotesDropdown.MaxDropDownItems = 2;
             this.EnclosedInQuotesDropdown.Name = "EnclosedInQuotesDropdown";
             this.EnclosedInQuotesDropdown.Size = new System.Drawing.Size(115, 28);
@@ -241,7 +252,7 @@
             this.DelimiterTextBox.AcceptsTab = true;
             this.DelimiterTextBox.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DelimiterTextBox.Location = new System.Drawing.Point(260, 34);
-            this.DelimiterTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DelimiterTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.DelimiterTextBox.Name = "DelimiterTextBox";
             this.DelimiterTextBox.Size = new System.Drawing.Size(132, 27);
             this.DelimiterTextBox.TabIndex = 14;
@@ -253,7 +264,7 @@
             // 
             this.LoadCSVButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoadCSVButton.Location = new System.Drawing.Point(668, 621);
-            this.LoadCSVButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoadCSVButton.Margin = new System.Windows.Forms.Padding(4);
             this.LoadCSVButton.Name = "LoadCSVButton";
             this.LoadCSVButton.Size = new System.Drawing.Size(203, 42);
             this.LoadCSVButton.TabIndex = 12;
@@ -270,7 +281,7 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.Location = new System.Drawing.Point(16, 43);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -289,9 +300,9 @@
             this.groupBox2.Controls.Add(this.StartButton);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(897, 343);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(416, 327);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
@@ -303,7 +314,7 @@
             this.ColumnNameCheckedListbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ColumnNameCheckedListbox.FormattingEnabled = true;
             this.ColumnNameCheckedListbox.Location = new System.Drawing.Point(19, 27);
-            this.ColumnNameCheckedListbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ColumnNameCheckedListbox.Margin = new System.Windows.Forms.Padding(4);
             this.ColumnNameCheckedListbox.Name = "ColumnNameCheckedListbox";
             this.ColumnNameCheckedListbox.ScrollAlwaysVisible = true;
             this.ColumnNameCheckedListbox.Size = new System.Drawing.Size(373, 235);
@@ -317,7 +328,7 @@
             this.FilenameDisplayBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FilenameDisplayBox.ForeColor = System.Drawing.Color.Black;
             this.FilenameDisplayBox.Location = new System.Drawing.Point(16, 627);
-            this.FilenameDisplayBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FilenameDisplayBox.Margin = new System.Windows.Forms.Padding(4);
             this.FilenameDisplayBox.MaxLength = 9999999;
             this.FilenameDisplayBox.Name = "FilenameDisplayBox";
             this.FilenameDisplayBox.ReadOnly = true;
@@ -328,17 +339,6 @@
             this.FilenameDisplayBox.TabStop = false;
             this.FilenameDisplayBox.Text = "No file selected...";
             this.FilenameDisplayBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // DumpAsTextCheckbox
-            // 
-            this.DumpAsTextCheckbox.AutoSize = true;
-            this.DumpAsTextCheckbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DumpAsTextCheckbox.Location = new System.Drawing.Point(19, 191);
-            this.DumpAsTextCheckbox.Name = "DumpAsTextCheckbox";
-            this.DumpAsTextCheckbox.Size = new System.Drawing.Size(224, 24);
-            this.DumpAsTextCheckbox.TabIndex = 21;
-            this.DumpAsTextCheckbox.Text = "Dump Output as Flat Text";
-            this.DumpAsTextCheckbox.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -356,13 +356,13 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1347, 760);
             this.MinimumSize = new System.Drawing.Size(1347, 760);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SlimCSV (v1.03)";
+            this.Text = "SlimCSV (v1.04)";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
