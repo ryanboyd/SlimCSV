@@ -35,8 +35,16 @@ namespace SlimCSV
                 EncodingDropdown.Items.Add(encoding.Name);
             }
 
+            try
+            {
+                EncodingDropdown.SelectedIndex = EncodingDropdown.FindStringExact("utf-8");
+            }
+            catch
+            {
+                EncodingDropdown.SelectedIndex = EncodingDropdown.FindStringExact(Encoding.Default.BodyName);
+            }
+
             
-            EncodingDropdown.SelectedIndex = EncodingDropdown.FindStringExact(Encoding.Default.BodyName);
             
 
 
