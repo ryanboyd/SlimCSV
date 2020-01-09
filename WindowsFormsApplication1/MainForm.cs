@@ -489,7 +489,7 @@ namespace SlimCSV
                 DumpOutputAsTXT = DumpAsTextCheckbox.Checked;
             });
 
-            string OutputFile = Path.GetDirectoryName(InputFile) + Path.DirectorySeparatorChar + "_SLIM_" + Path.GetFileName(InputFile);
+            string OutputFile = BgData.OutputLocation + Path.DirectorySeparatorChar + "_SLIM_" + Path.GetFileName(InputFile);
             if (DumpOutputAsTXT) OutputFile += ".txt";
 
             try { 
